@@ -16,25 +16,30 @@ const router = createRouter({
     },
     {
       path: '/coaches',
-      component: CoachesList
+      component: CoachesList,
+      name: "CoachesList"
     },
     {
       path: '/coaches/:id',
       component: CoachDetails,
+      name: "CoachDetails",
       children : [
         {
           path: 'contact',
-          component: ContactCoach
+          component: ContactCoach,
+          name: "ContactCoach"
         }
       ]
     },
     {
       path: '/register',
-      component: CoachRegister
+      component: CoachRegister,
+      name: "CoachRegister"
     },
     {
       path: '/requests',
-      component: RequestsReceived
+      component: RequestsReceived,
+      name: "RequestsReceived"
     },
     {
       path: '/:notFound(.*)',

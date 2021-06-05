@@ -1,5 +1,5 @@
 <template>
-  <div>Heading here</div>
+  <div>Registration</div>
 </template>
 
 <script>
